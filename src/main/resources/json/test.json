@@ -1,0 +1,138 @@
+{
+  "url": "192.168.2.21:503",
+  "label": "新装配车间 串口",
+  "mode": "serial",
+  "rtuCofing": {
+    "baud": 9600,
+    "parit": "N",
+    "stop": 1,
+    "timeout": 2
+  },
+  "props": [
+    {
+      "idex": 1,
+      "tid": 2,
+      "funCode": 3,
+      "addr": 0,
+      "quantity": 8,
+      "did": "c3oJZtKXs",
+      "interval": 1,
+      "items": [
+        {
+          "idx": 0,
+          "sn": "zphost1",
+          "dataTypeId": 22,
+          "dataType": "装配车间-1#主机-冷水入口温度",
+          "parseType": "b2_int16_1p",
+          "skip": false,
+          "threshold": false,
+          "lower": 0,
+          "upper": 0,
+          "frequency": 159,
+          "vbit": false,
+          "widx": 2
+        },
+
+        {
+          "idx": 1,
+          "sn": "zphost1",
+          "dataTypeId": 23,
+          "dataType": "装配车间-1#主机-冷水出口温度",
+          "parseType": "b2_int16_1p",
+          "skip": false,
+          "vbit": false,
+          "threshold": false,
+          "lower": 0,
+          "upper": 0,
+          "frequency": 159,
+          "widx": 2
+        },
+
+        {
+          "idx": 2,
+          "sn": "zphost1",
+          "dataTypeId": 14,
+          "dataType": "装配车间-1#主机-供油温度",
+          "parseType": "b2_int16_1p",
+          "skip": false,
+          "vbit": false,
+          "threshold": false,
+          "lower": 0,
+          "upper": 0,
+          "frequency": 159,
+          "widx": 2
+        },
+
+        {
+          "idx": 3,
+          "sn": "zphost1",
+          "dataTypeId": 24,
+          "dataType": "装配车间-1#主机-冷却水入口温度",
+          "parseType": "b2_int16_1p",
+          "skip": false,
+          "vbit": false,
+          "threshold": false,
+          "lower": 0,
+          "upper": 0,
+          "frequency": 159,
+          "widx": 2
+        }
+      ]
+    },
+    {
+      "idex": 2,
+      "tid": 2,
+      "funCode": 3,
+      "addr": 20,
+      "quantity": 6,
+      "did": "c3oJZtKXs",
+      "interval": 1,
+      "items": [
+        {
+          "idx": 0,
+          "sn": "zphost1",
+          "dataTypeId": 10,
+          "dataType": "装配车间-1#主机-冷凝压力",
+          "parseType": "b2_int16_2p",
+          "skip": false,
+          "vbit": false,
+          "threshold": false,
+          "range": true,
+          "lower": 0,
+          "upper": 10000,
+          "frequency": 159,
+          "widx": 2
+        },
+        {
+          "idx": 1,
+          "sn": "zphost1",
+          "dataTypeId": 11,
+          "dataType": "装配车间-1#主机-蒸发压力",
+          "parseType": "b2_int16_2p",
+          "skip": true,
+          "isLog": true,
+          "vbit": false,
+          "threshold": false,
+          "lower": 0,
+          "upper": 0,
+          "frequency": 159,
+          "widx": 2
+        },
+        {
+          "idx": 2,
+          "sn": "zphost1",
+          "dataTypeId": 13,
+          "dataType": "装配车间-1#主机-供油压力",
+          "parseType": "b2_int16_2p",
+          "skip": false,
+          "vbit": false,
+          "threshold": false,
+          "lower": 0,
+          "upper": 0,
+          "frequency": 159,
+          "widx": 2
+        }
+      ]
+    }
+  ]
+}
